@@ -1,0 +1,29 @@
+/* Tablets */
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+  
+  .category-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  
+  .category-container {
+    grid-template-columns: 1fr;
+  }
+}

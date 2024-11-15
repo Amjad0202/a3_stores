@@ -1,0 +1,44 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Fruits & Vegetables",
+      "image": "assets/images/categories/fruits-veg.jpg"
+    },
+    {
+      "id": 2, 
+      "name": "Dairy & Eggs",
+      "image": "assets/images/categories/dairy.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Bakery",
+      "image": "assets/images/categories/bakery.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Meat & Seafood",
+      "image": "assets/images/categories/meat.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Organic Bananas",
+      "category": 1,
+      "price": 2.99,
+      "unit": "lb",
+      "image": "assets/images/products/bananas.jpg",
+      "description": "Fresh organic bananas from local farms"
+    },
+    {
+      "id": 2,
+      "name": "Fresh Milk",
+      "category": 2,
+      "price": 3.49,
+      "unit": "gallon",
+      "image": "assets/images/products/milk.jpg",
+      "description": "Farm fresh whole milk"
+    }
+  ]
+}

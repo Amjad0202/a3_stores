@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Market Grocery</title>
+    <meta name="description" content="Fresh Market - Your local grocery shop for fresh and organic products">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <i class="fas fa-shopping-basket"></i>
+                <span>Fresh Market</span>
+            </a>
+            
+            <div class="nav-items">
+                <a href="#home" class="active">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <div class="icons">
+                <i class="fas fa-search" id="search-btn"></i>
+                <div style="position: relative;">
+                    <i class="fas fa-shopping-cart" id="cart-btn"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <i class="fas fa-bars" id="menu-btn"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home" style="background-image: url('assets/images/hero/hero-bg.webp')">
+        <div class="hero-content">
+            <h1>Fresh & Organic<br>Groceries</h1>
+            <p>Discover quality products for your family</p>
+            <a href="#products" class="btn">Shop Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories fade-in" id="categories">
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="category-container">
+            <div class="category-card">
+                <img src="assets/images/categories/fruits-veg.jpg" alt="Fruits & Vegetables">
+                <h3>Fruits & Vegetables</h3>
+                <a href="#" class="category-link">Browse Products</a>
+            </div>
+            <!-- More category cards loaded from products.json -->
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products" id="products">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <!-- Products loaded from products.json -->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+<!-- Testimonials Section -->
+<section class="testimonials parallax" id="testimonials">
+    <h2 class="section-title">What Our Customers Say</h2>
+    <div class="swiper testimonial-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="testimonial-card fade-in-up">
+                    <img src="assets/images/testimonials/customer1.jpg" alt="Customer" class="testimonial-img">
+                    <p>"Amazing quality and fresh products. The best grocery store in town!"</p>
+                    <h4>John Doe</h4>
+                </div>
+            </div>
+            <!-- More testimonials -->
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="assets/images/about-store.jpg" alt="Our Store">
+            </div>
+            <div class="about-content">
+                <h3>Why Choose Fresh Market?</h3>
+                <p>We're committed to providing fresh, organic, and locally sourced products to our community.</p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-truck"></i>
+                        <h4>Free Delivery</h4>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-leaf"></i>
+                        <h4>Organic Products</h4>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-headset"></i>
+                        <h4>24/7 Support</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-container">
+            <form class="contact-form" id="contactForm">
+                <h3>Send us a Message</h3>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Grocery Street, Food City, FC 12345</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+1 234 567 8900</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>contact@freshmarket.com</p>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Fresh Market</h3>
+                <p>Your trusted grocery partner</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 8am - 9pm</p>
+                <p>Saturday - Sunday: 9am - 8pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email">
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Fresh Market. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/validation.js"></script>
+</body>
+</html>
